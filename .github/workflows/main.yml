@@ -9,9 +9,9 @@ jobs:
   get-feed:
     runs-on: ubuntu-latest
     env:
-      NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      NOTION_READER_DATABASE_ID: ${{ secrets.NOTION_READER_DATABASE_ID }}
-      NOTION_FEEDS_DATABASE_ID: ${{ secrets.NOTION_FEEDS_DATABASE_ID }}
+      NOTION_API_TOKEN: ${{secrets.NOTION_API_TOKEN}}
+      NOTION_READER_DATABASE_ID: ${{secrets.NOTION_READER_DATABASE_ID}}
+      NOTION_FEEDS_DATABASE_ID: ${{secrets.NOTION_FEEDS_DATABASE_ID}}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v2
